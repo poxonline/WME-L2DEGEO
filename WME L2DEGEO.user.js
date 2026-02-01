@@ -2,7 +2,7 @@
 // @name    WME Link to German States Geo Portals
 // @description This script create buttons to open Geo portals of German states, using the WME paramenters where supported.
 // @namespace  https://github.com/iridium1-waze/WME-L2DEGEO/blob/main/WME%20L2DEGEO.user.js
-// @version   2026.02.01.01
+// @version   2026.02.01.02
 // @include   https://*.waze.com/editor*
 // @include   https://*.waze.com/*/editor*
 // @license   MIT
@@ -15,7 +15,7 @@
 // Mini howto:
 // 1) install this script as GitHub script
 // 2) Click on any of the links includes to open the state GEO portal, PL Data will be handed over where supported.
-var l2degeo_version = "2026.02.01.01";
+var l2degeo_version = "2026.02.01.02";
 // by Iridium1 (contact either PM or iridium1.waze@gmail.com)
 // 2021.01.17.01: Initial release
 // 2021.04.12.01: Changed URL for Brandenburg Viewer
@@ -192,7 +192,7 @@ hes_btn.click(function(){
 });
 
 var hes_btn2 = $('<button style="width: 285px;height: 24px; font-size:85%;color: DarkSlateGrey;border-radius: 5px;border: 0.5px solid lightgrey; background: white">Geoportal Hessen Karten Frame (experimentell)</button>');
-hes_btn.click(function(){
+hes_btn2.click(function(){
 
   var mapsUrl = 'https://www.geoportal.hessen.de/mapbender/frames/index.php' ;
   window.open(mapsUrl,'_blank');
